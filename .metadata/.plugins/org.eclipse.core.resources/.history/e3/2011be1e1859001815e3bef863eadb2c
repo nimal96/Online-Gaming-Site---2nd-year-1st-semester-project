@@ -1,0 +1,45 @@
+package com.oop.dao;
+ 
+import java.sql.Connection;
+
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+import com.oop.bean.paymentBean;
+import com.oop.bean.*;
+import com.oop.dbconnection.DBConnection;
+ 
+public class paymentdao {
+ 
+ public String paymentuser(paymentBean paymentbean)
+ {
+	 String cardnumber = paymentbean.getCardNumber();
+	 String cardexpiry = paymentbean.getCardExpiry();
+	 String couponcode = paymentbean.getcouponcode();
+	 String cardcv  =   paymentbean.getcardcv();
+ 
+ Connection con = null;
+ PreparedStatement preparedStatement = null;
+ 
+ try
+ {
+ con = DBConnection.createConnection();
+ String query = "insert into payment(cardnumber,CardExpiry,CardCVC,couponCode) values (?,?,?,?)"; //Insert user details into the table 'USERS'
+ preparedStatement = con.prepareStatement(query); //Making use of prepared statements here to insert bunch of data
+ preparedStatement.setString(1, cardnumber);
+ preparedStatement.setString(2, cardexpiry);
+ preparedStatement.setString(3, couponcode);
+ preparedStatement.setString(4, cardcv);
+ 
+ int i= preparedStatement.executeUpdate();
+ 
+ if (i!=0)  //Just to ensure data has been inserted into the database
+ return "SUCCESS"; 
+ }
+ catch(SQLException e)
+ {
+ e.printStackTrace();
+ }
+ 
+ return "Oops.. Something went wrong there..!";  // On failure, send a message from here.
+ }
+}

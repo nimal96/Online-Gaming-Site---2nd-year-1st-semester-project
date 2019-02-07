@@ -1,0 +1,102 @@
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<html lang="en">
+   
+ <head>
+       
+ <meta charset="utf-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+       	<title>Game Site </title>
+        
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css" >
+   
+     	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+       
+ 		<link rel="stylesheet" href="gamesEditor/formcs.css" >
+   
+     	<script src="gamesEditor/formjs.js"></script>
+  <script>  	
+   function validate()
+   { 
+	var fullname = document.frmAddUser.userid.value;
+ 	var email = document.frmAddUser.firstName.value;
+ 	var username = document.frmAddUser.lastName.value; 
+
+ 
+ 	if (fullname==null || fullname=="")
+	 { 
+		 alert("User ID can't be blank"); 
+ 		return false; 
+ 	}
+ 	else if (email==null || email=="")
+ 	{ 
+ 		alert("Game Name can't be blank"); 
+ 		return false; 
+ 	}
+ 	else if (username==null || username=="")
+ 	{ 
+ 		alert("Developer name can't be blank"); 
+	 	return false; 
+ 	}
+
+ } 
+     	
+ </script>
+   
+ </head>
+
+  <body >
+      
+  <div class="container">
+
+    <div class="form-container">
+                
+	<h1>
+ 	Add Games 
+	 </h1>
+          
+    <form method="POST" action='GameHandler' name="frmAddUser"><input type="hidden" name="action" value="insert" onsubmit="return validate()"/>
+                   
+ 	<label for="gameID">Game ID:</label>
+         
+           <input id="name" type="text" name="userid">
+   
+ 	<label for="name">Game name:</label>
+                 
+   	<input id="name" name="firstName">
+  
+	 <label for="developer">Devoloper :</label>
+                 
+   	<input id="developer" type="developer" name="lastName">
+   	<table>
+ 	 <tr>
+ 	<td><%=(request.getAttribute("errMessage") == null) ? "": request.getAttribute("errMessage")%></td>
+	 </tr>
+	 </table>
+                 
+       <button class="button-primary" type="submit" >SUBMIT</button>
+           
+     </form>
+ <p><a href="GameHandler?action=listUser">View-All-Records</a></p>          
+ <div id="success_message" style="display:none">
+               
+     <h3>Submitted the form successfully!</h3> 
+
+                    <p> We will get back to you soon. </p>
+  
+  </div>
+                
+<div id="error_message" style="width:100%; height:100%; display:none; "> 
+<h3>Error</h3> Sorry there was an error sending your form. </div>
+          
+  </div>
+        
+</div>
+    
+</body>
+</html>

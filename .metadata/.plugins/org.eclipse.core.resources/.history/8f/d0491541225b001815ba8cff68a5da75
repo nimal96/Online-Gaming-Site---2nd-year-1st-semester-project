@@ -1,0 +1,33 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+<style> 
+#example1 {
+    background-image: url(images/fear.jpg), url(paper.gif);
+    background-position: right bottom, left top;
+    background-repeat: no-repeat, repeat;
+    background-color:light blue;
+    padding: 15px;
+}
+</style>
+</head>
+<body>
+
+<h1>StarCraft 2</h1>
+<h2> Click on the link to download:<a href="payment.jsp">Download Link</a></h2>
+<p>StarCraft II: Wings of Liberty:</p>
+
+<div id="example1">
+<h1>Description</h1>
+<p>The F.E.A.R. 2 gameplay maintains the core elements from the original, including slo-mo combat, martial arts attacks, and enhanced A.I. The A.I. from the original F.E.A.R. was known for its exploitation of the environments, taking cover behind pillars and knocking down tables, and many of these behaviors have been retained for the sequel. New features in the game include iron sight aiming, creating cover by pushing objects, and the ability to use mechs during vehicle segments. The ability to lean and walk have been removed.
+ Project Origin features a more diverse cast of enemies, as well as more encounters with supernatural enemies.</p>
+<p>F.E.A.R. 2 does not allow the player to manually save and features a single save slot that relies on a checkpoint system. However, the game allows the player 
+to replay any level from the main menu after first completing that level..</p>
+</div>
+
+</body>
+</html>

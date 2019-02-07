@@ -1,0 +1,33 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+<style> 
+#example1 {
+    background-image: url(images/starcraft.jpg), url(paper.gif);
+    background-position: right bottom, left top;
+    background-repeat: no-repeat, repeat;
+    background-color:light blue;
+    padding: 15px;
+}
+</style>
+</head>
+<body>
+
+<h1>StarCraft 2</h1>
+<h2> Click on the link to download:<a href="payment.jsp">Download Link</a></h2>
+<p>StarCraft II: Wings of Liberty:</p>
+
+<div id="example1">
+<h1>Description</h1>
+<p>StarCraft II: Wings of Liberty is a military science fiction real-time strategy video game developed and published by Blizzard Entertainment. It was released worldwide in July 2010 for Microsoft Windows and Mac OS X.[6] A sequel to the 1998 video game StarCraft and its expansion set Brood War, 
+the game is split into three installments: the base game with the subtitle Wings of Liberty,</p>
+<p>The game revolves around three species: the Terrans, human exiles from Earth; the Zerg, a super-species of assimilated life forms;[8] and the Protoss, a technologically advanced species with vast mental powers. Wings of Liberty focuses on the Terrans, while the expansions Heart 
+of the Swarm and Legacy of the Void focus on the Zerg and Protoss, respectively.</p>
+</div>
+
+</body>
+</html>

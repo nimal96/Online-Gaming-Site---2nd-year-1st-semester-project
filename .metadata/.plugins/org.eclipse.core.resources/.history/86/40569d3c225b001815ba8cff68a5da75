@@ -1,0 +1,33 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+<style> 
+#example1 {
+    background-image: url(images/fallout.jpg), url(paper.gif);
+    background-position: right bottom, left top;
+    background-repeat: no-repeat, repeat;
+    background-color:light blue;
+    padding: 15px;
+}
+</style>
+</head>
+<body>
+
+<h1>FALLOUT 3</h1>
+<h2> Click on the link to download:<a href="payment.jsp">Download Link</a></h2>
+<p>StarCraft II: Wings of Liberty:</p>
+
+<div id="example1">
+<h1>Description</h1>
+<p>Fallout 3 is a post-apocalyptic action role-playing open world video game developed by Bethesda Game Studios and published by Bethesda Softworks. The third major installment in the Fallout series,[1] it is the first game to be created by Bethesda since it bought the franchise from Interplay Entertainment. The game marks a major shift in the series by using 3D graphics and real-time combat, replacing the 2D isometric graphics and turn-based combat of previous installments. 
+It was released worldwide in October 2008 for Microsoft Windows, PlayStation 3, and Xbox 360.[2][3][4]</p>
+<p>The game is set within a post-apocalyptic, open world environment that encompasses a region consisting of the ruins of Washington, D.C. and much of the countryside to the west of it, referred to as the "Capital Wasteland". It takes place within Fallout's usual setting of a world that deviated into an alternate timeline thanks to atomic age technology, which eventually led to its devastation by a nuclear apocalypse in the year 2077 (referred to as "The Great War"), caused by a major international conflict between the United States and China 
+over natural resources and the last remaining supplies of untapped petroleum. </p>
+</div>
+
+</body>
+</html>

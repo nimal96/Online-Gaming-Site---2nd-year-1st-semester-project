@@ -1,0 +1,29 @@
+package com.oop.bean;
+
+public class GameBean {
+
+    private int id;
+    private String gameName;
+    private String lName;
+        
+    
+    public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
+	public String getGameName() {
+		return gameName;
+	}
+	public void setGameName(String gameName) {
+		this.gameName = gameName;
+	}
+	public String getlName() {
+		return lName;
+	}
+	public void setlName(String lName) {
+		this.lName = lName;
+	}
+
+}

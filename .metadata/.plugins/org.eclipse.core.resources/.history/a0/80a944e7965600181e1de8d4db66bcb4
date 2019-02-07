@@ -1,0 +1,62 @@
+package com.oop.model;
+
+
+
+public class paymentBean {
+	
+
+	private String CardNumber;
+	
+	private String CardExpiry;
+	
+	private String cardcv;
+	
+	private String couponcode;
+	
+
+	public String getCardNumber(){
+
+		return CardNumber;
+	
+	}
+	
+	
+	public void setCardNumber(String cn){
+
+		this.CardNumber=cn;
+	}
+
+	
+	public String getCardExpiry(){
+
+		return CardExpiry;
+	
+	}
+	
+	
+	public void setCardExpiry(String ce){
+
+		this.CardExpiry=ce;
+
+	}
+	public String getcouponcode(){
+
+		return couponcode;
+	
+	}
+	public void setcouponcode(String cc){
+
+		this.couponcode=cc;
+	}
+
+	public String getcardcv(){
+
+		return cardcv;
+	}
+
+	public void setcardcv(String cv){
+
+		this.cardcv=cv;
+	}
+}
+
